@@ -1,0 +1,69 @@
+//Java
+public class MainApplication {
+    public static void main(String[] args) {
+        int n = 100;
+        for (int i = 0; i < n; i++) {
+            for(int j=0;j<i;j++){
+                System.out.print(" ");
+            }
+
+            for(int j=0;j<n-i;j++){
+                System.out.print("* ");
+            }
+            if (i < n - 1) {
+                System.out.print("\n");
+            } else {
+
+            }
+        }
+    }
+}
+
+
+//C语言
+#include<stdio.h>
+int main(void) {
+	int n = 4;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < i; j++) {
+			printf(" ");
+		}
+
+		for (int j = 0; j < n - i; j++) {
+			printf("* ");
+		}
+
+		if (i < 3) {
+			printf("\n");
+		}
+		else {
+			return 0;
+		}
+	}
+	return 0;
+}
+
+
+
+//另外一种方法
+//#include<stdio.h>
+//int main(void) {
+//	for (int i = 4; i > 0; --i) {
+//		for (int j = i; j > 0; --j) {
+//			printf("* ");
+//		}
+//		if (i > 1) {
+//			printf("\n");
+//			for (int k = 4 - i + 1; k > 0; --k) {
+//				printf(" ");
+//			}
+//		}
+//		else {
+//			return 0;
+//		}
+//	}
+//	return 0;
+//}
+
+
+
